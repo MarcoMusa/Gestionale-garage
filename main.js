@@ -1,6 +1,6 @@
 let garage = [
-    { brand: 'fiat', model: 'punto', color: '#832232' },
-    { brand: 'bmw', model: 'x4', color: '#0B0033' },
+    { brand: 'fiat', model: 'punto', name: 'Marco Musa', color: '#832232' },
+    { brand: 'bmw', model: 'x4', name: 'Mario Rossi', color: '#0B0033' },
     { brand: 'bmw', model: 'x3', color: '#0B0033' },
     { brand: 'bmw', model: 'x1', color: '#0B0033' },
     { brand: 'bmw', model: 'x5', color: '#0B0033' },
@@ -27,7 +27,7 @@ function showCars(cars) {
 
             `
         <div class="box" style="border-top: ${auto.color} 5px solid;">
-        <h2>${auto.brand}</h2>
+        <h2>${auto.brand}</h2> <span class="fs-3 text-white fw-bold">${auto.name}</span>
         <p class="fs-5 text-white fw-bolder">${auto.model}</p>
         <img
             class="icon"
