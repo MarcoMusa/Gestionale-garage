@@ -1,12 +1,12 @@
 let garage = [
     { brand: 'fiat', model: 'punto', name: 'Marco Musa', color: '#832232' },
     { brand: 'bmw', model: 'x4', name: 'Mario Rossi', color: '#0B0033' },
-    { brand: 'bmw', model: 'x3', color: '#0B0033' },
-    { brand: 'bmw', model: 'x1', color: '#0B0033' },
-    { brand: 'bmw', model: 'x5', color: '#0B0033' },
-    { brand: 'fiat', model: 'tipo', color: '#832232' },
-    { brand: 'mercedes', model: 'classe A', color: '#EAF27C' },
-    { brand: 'fiat', model: 'cinquencento', color: '#832232' },
+    { brand: 'bmw', model: 'x3', name: 'Mario Rossi', color: '#0B0033' },
+    { brand: 'bmw', model: 'x1', name: 'Mario Rossi', color: '#0B0033' },
+    { brand: 'bmw', model: 'x5', name: 'Mario Rossi', color: '#0B0033' },
+    { brand: 'fiat', model: 'tipo', name: 'Mario Rossi', color: '#832232' },
+    { brand: 'mercedes', model: 'classe A', name: 'Mario Rossi', color: '#EAF27C' },
+    { brand: 'fiat', model: 'cinquencento', name: 'Mario Rossi', color: '#832232' },
 ]
 
 
@@ -80,7 +80,7 @@ inputSearch.addEventListener('input', () => {
     garage.forEach(auto => {
 
         /* FILTRA PER BRAND */
-        if (auto.brand.includes(search) || auto.model.includes(search)) {
+        if (auto.brand.includes(search) || auto.model.includes(search) || auto.name.includes(search)) {
 
             filtered.push(auto)
 
@@ -99,10 +99,11 @@ inputSearch.addEventListener('input', () => {
 })
 
 /* CREO FUNZIONE NUOVA AUTO */
-function addCar(brand, model, color = '#0b0033') {
+function addCar(brand, model, name, color = '#0b0033') {
     let newCar = {
         brand: brand,
         model: model,
+        name: name,
         color: color,
     }
 
@@ -117,9 +118,10 @@ addBtnCar.addEventListener('click', () => {
 
     let inputBrand = document.querySelector('#inputBrand')
     let inputModel = document.querySelector('#inputModel')
+    let inputName = document.querySelector('#inputName')
 
 
-    addCar(inputBrand.value, inputModel.value)
+    addCar(inputBrand.value, inputModel.value, inputName.value)
     showCars(garage)
 
 })
