@@ -99,3 +99,31 @@ inputSearch.addEventListener('input', () => {
     showCars(filtered);
 })
 
+/* CREO FUNZIONE NUOVA AUTO */
+function addCar(brand, model, color = '#0b0033') {
+    let newCar = {
+        brand: brand,
+        model: model,
+        color: color,
+    }
+
+
+    garage.push(newCar)
+}
+
+/* EVENTO CLICK BOTTONE NUOVA AUTO */
+let addBtnCar = document.querySelector('#addBtnCar')
+
+addBtnCar.addEventListener('click', () => {
+
+    let inputBrand = document.querySelector('#inputBrand')
+    let inputModel = document.querySelector('#inputModel')
+
+
+    addCar(inputBrand.value, inputModel.value)
+    showCars(garage)
+
+})
+
+
+
