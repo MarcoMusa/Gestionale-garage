@@ -34,6 +34,10 @@
   border: #0b0033 solid 3px;
 }
 
+.border-btnAdd {
+  border-top: red solid 3px;
+}
+
 .bg-comand {
   background: rgb(11, 0, 51);
   background: linear-gradient(
