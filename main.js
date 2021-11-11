@@ -55,7 +55,6 @@ const btnShowGarage = document.querySelector('#btnShowGarage')
 
 
 /* EVENTO CLICK MOSTRA/NON MOSTRA AUTO */
-
 btnShowGarage.addEventListener('click', () => {
 
     let wrapper = document.querySelector('#carsWrapper')
