@@ -28,7 +28,7 @@ function showCars(cars) {
             `
         <div class="box" style="border-top: ${auto.color} 5px solid;">
         <h2>${auto.brand}</h2>
-        <p class="fs-5 text-secondary fw-bolder">${auto.model}</p>
+        <p class="fs-5 text-white fw-bolder">${auto.model}</p>
         <img
             class="icon"
             src="https://www.cauccisicurezza.it/wp-content/uploads/2018/03/key-inside.png"

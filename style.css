@@ -7,6 +7,12 @@
   box-shadow: 0px 30px 40px -20px #3d3d3d;
   padding: 30px;
   margin: 20px;
+  background: rgb(11, 0, 51);
+  background: linear-gradient(
+    349deg,
+    rgba(11, 0, 51, 1) 0%,
+    rgba(80, 161, 172, 0.7693452380952381) 82%
+  );
 }
 
 .icon {
@@ -14,7 +20,7 @@
 }
 
 .btn-custom {
-  border-top: red 5px solid;
+  border-top: green 5px solid;
   background-color: #0b0033;
   border-radius: 0.8rem;
 }
@@ -26,4 +32,13 @@
 
 .border-custom {
   border: #0b0033 solid 3px;
+}
+
+.bg-comand {
+  background: rgb(11, 0, 51);
+  background: linear-gradient(
+    349deg,
+    rgba(11, 0, 51, 1) 0%,
+    rgba(80, 161, 172, 0.7693452380952381) 82%
+  );
 }
