@@ -15,6 +15,8 @@ function showCars(cars) {
 
     let wrapper = document.querySelector('#carsWrapper')
 
+    wrapper.innerHTML = ''
+
 
     cars.forEach(auto => {
 
@@ -79,7 +81,7 @@ inputSearch.addEventListener('input', () => {
     garage.forEach(auto => {
 
         /* FILTRA PER BRAND */
-        if (auto.brand.includes(search)) {
+        if (auto.brand.includes(search) || auto.model.includes(search)) {
 
             filtered.push(auto)
 
@@ -87,11 +89,11 @@ inputSearch.addEventListener('input', () => {
 
 
         /* FILTRA PER MODELLO */
-        if (auto.model.includes(search)) {
+        /* if (auto.model.includes(search)) {
 
             filtered.push(auto)
 
-        }
+        } */
     })
 
     showCars(filtered);
