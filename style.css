@@ -1,6 +1,13 @@
 .text-blu {
   color: #0b0033;
 }
+.bg-nav {
+  background-color: #ecf0f5;
+}
+
+.bg-link {
+  background-color: #6d6b6d94;
+}
 
 .box {
   border-radius: 5px;
@@ -20,8 +27,8 @@
 }
 
 .btn-custom {
-  border-top: green 5px solid;
-  background-color: #0b0033;
+  border-top: #0b0033 5px solid;
+  background-color: #d5d9dd;
   border-radius: 0.8rem;
 }
 

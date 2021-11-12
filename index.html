@@ -27,7 +27,7 @@
     <title>Gestionale garage</title>
   </head>
   <body>
-    <div class="container-fluid bg-success px-5 shadow">
+    <div class="container-fluid bg-nav px-5 shadow">
       <div class="row">
         <div class="col-12">
           <h1 class="text-center text-blu fs-1 fw-bold">
@@ -37,7 +37,23 @@
       </div>
     </div>
 
-    <!-- SEZIONE BOTTONI E INPUT -->
+    <div class="container-fluid bg-link py-3">
+      <div class="row">
+        <div class="col-3">
+          <button
+            id="btnShowGarage"
+            class="btn btn-black shadow fw-bolder btn-custom text-blu"
+          >
+            <i class="fas fa-eye fs-5 px-2"></i> Tutte le auto
+          </button>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+
+    <!--   
     <div class="container shadow bg-custom bg-comand border-custom mt-3">
       <div class="row">
         <div class="col-6 d-flex justify-content-center py-4">
@@ -96,10 +112,11 @@
       </div>
     </div>
 
-    <!-- SEZIONE CARD -->
+    
     <div class="container">
       <div id="carsWrapper" class="row"></div>
     </div>
+    
 
     <script src="./main.js"></script>
 
