@@ -27,19 +27,9 @@
     <title>Gestionale garage</title>
   </head>
   <body>
-    <div class="container-fluid bg-nav px-5 shadow">
+    <div class="container-fluid bg-nav px-5 shadow mt-3 mb-3">
       <div class="row">
-        <div class="col-12">
-          <h1 class="text-center text-blu fs-1 fw-bold">
-            <i class="fas fa-parking px-3 text-blu fs-1"></i>Gestionale Garage
-          </h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid bg-link py-3">
-      <div class="row">
-        <div class="col-3">
+        <div class="col-4 d-flex justify-content-center">
           <button
             id="btnShowGarage"
             class="btn btn-black shadow fw-bolder btn-custom text-blu"
@@ -47,76 +37,62 @@
             <i class="fas fa-eye fs-5 px-2"></i> Tutte le auto
           </button>
         </div>
-        <div class="col-3"></div>
-        <div class="col-3"></div>
-        <div class="col-3"></div>
-      </div>
-    </div>
-
-    <!--   
-    <div class="container shadow bg-custom bg-comand border-custom mt-3">
-      <div class="row">
-        <div class="col-6 d-flex justify-content-center py-4">
-          <button
-            id="btnShowGarage"
-            class="btn btn-black shadow fw-bolder btn-custom text-white"
-          >
-            <i class="fas fa-eye px-1 fs-5 px-2"></i> Tutte le auto
-          </button>
+        <div class="col-4 d-flex justify-content-center">
+          <h1 class="text-center text-blu fs-1 fw-bold">
+            <i class="fas fa-parking px-3 text-blu fs-1"></i>Gestionale Garage
+          </h1>
         </div>
-        <div class="col-6 d-flex justify-content-center py-4">
+        <div class="col-4 d-flex justify-content-center">
           <input
             placeholder="Cerca auto"
             id="inputSearch"
+            class="form-control rounded-pill mt-2 border-success"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-link py-3">
+      <div class="row">
+        <div class="col-3 d-flex justify-content-center">
+          <button
+            id="addBtnCar"
+            class="btn btn-custom text-blu fw-bolder border-btnAdd"
+          >
+            <i class="far fa-plus-square fs-5 px-2"></i> Aggiungi nuova auto
+          </button>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <input
+            placeholder="Nome - Cognome"
+            id="inputName"
+            class="form-control w-50 rounded-pill mt-2 border-success"
+            type="text"
+          />
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <input
+            placeholder="Brand"
+            id="inputBrand"
+            class="form-control w-50 rounded-pill mt-2 border-success"
+            type="text"
+          />
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <input
+            placeholder="Modello"
+            id="inputModel"
             class="form-control w-50 rounded-pill mt-2 border-success"
             type="text"
           />
         </div>
       </div>
-      <hr />
-      <div class="col-12">
-        <div class="row">
-          <div class="col-3 d-flex justify-content-center py-4">
-            <button
-              id="addBtnCar"
-              class="btn btn-custom text-white fw-bolder border-btnAdd"
-            >
-              <i class="far fa-plus-square fs-5 px-2"></i> Aggiungi nuova auto
-            </button>
-          </div>
-          <div class="col-3 d-flex justify-content-center py-4">
-            <input
-              placeholder="Brand"
-              id="inputBrand"
-              class="form-control w-50 rounded-pill mt-2 border-success"
-              type="text"
-            />
-          </div>
-          <div class="col-3 d-flex justify-content-center py-4">
-            <input
-              placeholder="Modello"
-              id="inputModel"
-              class="form-control w-50 rounded-pill mt-2 border-success"
-              type="text"
-            />
-          </div>
-          <div class="col-3 d-flex justify-content-center py-4">
-            <input
-              placeholder="Nome - Cognome"
-              id="inputName"
-              class="form-control w-50 rounded-pill mt-2 border-success"
-              type="text"
-            />
-          </div>
-        </div>
-      </div>
     </div>
 
-    
     <div class="container">
       <div id="carsWrapper" class="row"></div>
     </div>
-    
 
     <script src="./main.js"></script>
 
