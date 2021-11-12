@@ -105,6 +105,7 @@ function addCar(brand, model, name, color = '#0b0033') {
         model: model,
         name: name,
         color: color,
+
     }
 
 
@@ -116,15 +117,28 @@ let addBtnCar = document.querySelector('#addBtnCar')
 
 addBtnCar.addEventListener('click', () => {
 
+
+
     let inputBrand = document.querySelector('#inputBrand')
     let inputModel = document.querySelector('#inputModel')
     let inputName = document.querySelector('#inputName')
+    let inputColor = document.querySelector('#inputColor')
+
+    console.log(inputColor.value);
 
 
-    addCar(inputBrand.value, inputModel.value, inputName.value)
+    addCar(inputBrand.value, inputModel.value, inputName.value, inputColor.value)
     showCars(garage)
+    reset()
+
 
 })
+
+function reset() {
+    inputBrand.value = ""
+    inputModel.value = ""
+    inputName.value = ""
+}
 
 
 
