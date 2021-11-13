@@ -21,7 +21,7 @@ function showCars(cars) {
     cars.forEach(auto => {
 
         let card = document.createElement("div");
-        card.classList.add('col-12', 'col-md-4', 'my-3');
+        card.classList.add('col-12', 'col-md-3', 'my-3');
 
         card.innerHTML =
 

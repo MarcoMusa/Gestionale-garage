@@ -1,3 +1,7 @@
+body {
+  background-color: #ecf0f5;
+}
+
 .border-radius {
   border-radius: 0.8rem;
 }
@@ -37,7 +41,7 @@ input[type="color"]::-webkit-color-swatch {
   box-shadow: 0px 30px 40px -20px #3d3d3d;
   padding: 30px;
   margin: 20px;
-  background-color: #ecf0f5;
+  background-color: #ecf0f5a6;
 }
 
 .icon {
