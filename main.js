@@ -26,9 +26,9 @@ function showCars(cars) {
         card.innerHTML =
 
             `
-        <div class="box" style="border-top: ${auto.color} 5px solid;">
-        <h2>${auto.brand}</h2> <span class="fs-3 text-white fw-bold">${auto.name}</span>
-        <p class="fs-5 text-white fw-bolder">${auto.model}</p>
+        <div class="box" style="border-top: ${auto.color} 15px solid;">
+        <h2>${auto.brand}</h2> <span class="fs-3 text-blu fw-bold">${auto.name}</span>
+        <p class="fs-5 text-blu fw-bolder">${auto.model}</p>
         <img
             class="icon"
             src="https://www.cauccisicurezza.it/wp-content/uploads/2018/03/key-inside.png"
