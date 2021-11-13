@@ -10,7 +10,7 @@ let garage = [
 ]
 
 
-/* MOSTRA TUTTE LE CARD DELLE AUTO */
+/* MOSTRA TUTTE LE CARD DELLE AUTO - DOM*/
 function showCars(cars) {
 
     let wrapper = document.querySelector('#carsWrapper')
@@ -118,7 +118,7 @@ let addBtnCar = document.querySelector('#addBtnCar')
 addBtnCar.addEventListener('click', () => {
 
 
-
+    /* VARIABILI INPUT */
     let inputBrand = document.querySelector('#inputBrand')
     let inputModel = document.querySelector('#inputModel')
     let inputName = document.querySelector('#inputName')
@@ -134,6 +134,7 @@ addBtnCar.addEventListener('click', () => {
 
 })
 
+/* RESET INPUT */
 function reset() {
     inputBrand.value = ""
     inputModel.value = ""
